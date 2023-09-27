@@ -3,5 +3,50 @@
   padding: 0;
 }
 .Search-bar {
+  height: 100px;
   text-align: center;
+  padding-top: 50px;
+}
+.Search-bar button {
+  padding: 10px;
+  width: 90px;
+  font-size: 15px;
+  background-color: 24a0ed;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.Moviessection {
+  padding: 10px;
+  height: 170vh;
+  padding: 20px;
+  background-color: #45567d;
+  text-align: center;
+}
+.mainheading {
+  font-size: 25px;
+  padding: 28px;
+  padding-top: 40px;
+}
+.moviesboxex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.moviesitems {
+  height: 500px;
+  width: 400px;
+  background-color: #303841;
+  margin: 4px;
+}
+.moviesitems img {
+  padding: 9px;
+}
+.moviesitems ul {
+  list-style-type: none;
+  border: 1px solid black;
+}
+.moviesitems li {
+  padding: 20px;
+  border: 1px solid black;
 }
