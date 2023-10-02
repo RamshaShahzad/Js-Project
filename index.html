@@ -3,17 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
     <script src="./script.js" defer></script>
     <title>Document</title>
   </head>
   <body>
     <!-- Search Bar -->
     <div class="Search-bar">
-      <input id="search" style="width: 700px; height: 50px" />
+      <input id="search" />
       <button id="btn" onclick="clickHandler()">Search</button>
+
+      <input id="filter" />
+      <button id="btn" onclick="filterMovies()">Filter</button>
     </div>
-    <!-- Seach bar ended -->
+
+    <!-- Filter bar ended -->
+
     <div class="moviesection">
       <ul id="movieList"></ul>
     </div>

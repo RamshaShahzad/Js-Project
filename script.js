@@ -1,9 +1,3 @@
-// const key = "1f73a5a2";
-
-// fetch("http://www.omdbapi.com/?s=tt3896198&apikey=1f73a5a2")
-//   .then((res) => res.json())
-//   .then((data) => console.log(data));
-
 const clickHandler = () => {
   const search = document.getElementById("search").value;
 
@@ -11,6 +5,7 @@ const clickHandler = () => {
     .then((resp) => {
       return resp.json();
     })
+
     .then((data) => {
       console.log(data.Search[0].Title);
       // UL tag id
@@ -19,10 +14,10 @@ const clickHandler = () => {
       function resultMovies(movie) {
         const listItem = `
           <li>
-          <div>
+          <div> 
+          <img src="${movie.Poster}" alt="Image not found">
           <p>Title: ${movie.Title}</p>
           <p>Year: ${movie.Year}</p>
-          <img src="${movie.Poster}" alt="Image not found">
           </div>
           </li>
           `;
